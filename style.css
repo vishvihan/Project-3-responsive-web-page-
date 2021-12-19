@@ -1,0 +1,209 @@
+/* desktop view */
+/* h1{
+    color: blue;
+    font-size: 20px;
+} */
+
+
+/* Tablet view (if you decrease the size of chrome than it will change 
+the color of h1 content */
+/* 
+@media (max-width:768px){
+    h1{
+        color: chartreuse;
+        /* font size says that : i am specific so i will change my size */
+        /* font-size: 40px;
+    }
+} */ 
+
+/* Mobile view */
+
+/* @media (max-width: 500px){
+    h1{
+        color: darkmagenta;
+        font-size: 60px;
+    }
+} */
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: thistle;
+    margin-top: 0px;
+}
+.header-container{
+    background-color: rgb(66, 65, 65);
+    min-height: 100px;
+    margin-bottom: 40px;
+    color: white;
+    position: fixed;
+    width: 100%;
+
+}
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    /* background-color: rgb(255, 0, 191); */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.logo{
+    margin: 0px 0px 0px 10px;
+}
+.mybutton{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.container{
+    min-height: 500px;
+    /* width: 1024px;  we can not use this bcz it is a fix it can not be responsive */
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding-top: 150px;
+}
+h1{
+    font-size: 50px;
+}
+.col{
+    /* background-color: blue;
+    min-height: 200px; */
+    width: 30%;
+    /* display: inline-block; */
+    margin-bottom: 40px;
+    background-color:lightgreen;
+}
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+ width: 100%;   
+ height: auto;
+}
+p{
+    font-size: 20x;
+    padding: 20px 30px;
+    line-height: 1.5;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+.web-wrapper{
+    display: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* tablet view */
+
+@media (max-width: 1000px){
+    .col{
+        width: 46%;
+    }
+    .hide-desktop-only{
+        display: block;
+    }
+
+    /* i commented this bcz i want nav menu to be inline  */
+    /* header{
+        display: block;
+        text-align: center;
+    } */
+    nav{
+        display: none;
+    }
+    nav a{
+        display: block;
+    }
+    .logo{
+        padding: 40px 0px;
+    }
+    .mybutton{
+        margin: 0;
+    }
+
+    /*we use this above redefine classes so when we show in mobile then it will cover some part of our first picture */
+    .header-container{
+        position: relative;
+        
+    }
+    /* when we used relative position so it gives more space bcz we used more padding in main container */
+    .container{
+        padding: 0;
+    }
+    .web-wrapper{
+        display: block;
+        padding-right: 40px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+    }
+    .navbutton{
+        display: block;
+        background-color: violet;
+        padding: 15px 25px;
+        margin-left: -50px;
+        text-align: center;
+    }
+
+}
+
+/* Mobile view */
+
+@media (max-width: 800px){
+    .col{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
